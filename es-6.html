@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>ES6 Features</h1>
+        <p id="pandi"></p>
+        <script>
+        let name="alice";
+        const pi= 3.146;
+        console.log(name,pi);
+        let age=25;
+        let greeting='hello ${name},you are ${age} years old.';
+        console.log(greeting);
+        const multiply=(a,b=2) =>a*b;
+        console.log("multiply:",multiply(5));
+        const numbers=[10,20,30];
+        const[x,y,z]=numbers;
+        console.log("destructured:",x,y,z);
+        const person={fname:"bob",city:"UK"};
+        const{fname, city}=person;
+        console.log("object destructured:",fname,city);
+        const arr1=[1,2];
+        const arr2=[3,4];
+        const combined=[...arr1, ...arr2];
+        console.log("combined arrow:",combined);
+        const add=(a,b )=> a+b;
+        console.log("arrow add:",add(5,10)
+        );
+        document.getElementById("pandi").innerText=greeting;
+    </script>
+    </body>
+</html>
